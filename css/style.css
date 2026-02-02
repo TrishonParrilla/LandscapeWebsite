@@ -88,6 +88,13 @@ img {
     margin-top:1em;
     background-color:#A3B18A;
     border-radius:8px;
+    transition: all 0.3s ease;
+}
+
+.hero-container:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
 }
 
 .hero-container img {
