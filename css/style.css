@@ -1,0 +1,256 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "montserrat", sans-serif;
+    width:100%;
+    height:100vh;
+    background-color: #DAD7CD;
+}
+
+img {
+    max-width:100%;
+    height:auto;
+}
+
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#588157;
+    padding-top:1em;
+    width:70%;
+    margin:auto;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    color:whitesmoke;
+    padding-bottom:1em;
+}
+
+.nav-links {
+    list-style:none;
+    display:flex;
+    flex-direction:row;
+    gap:1em;
+    
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    background-color:#A3B18A;
+    border-radius:5px;
+    padding:.2em;
+}
+
+
+.main-content {
+    width:100%;
+    height:100%;
+    height:auto;
+    margin: 5em auto;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+}
+
+.intro-text {
+    width:100%;
+    text-align: center;
+    margin-bottom:2em;
+    background-color: #344E41;
+    color:whitesmoke;
+    padding:1em 0;
+}
+
+.mission-title {
+    margin-bottom:1em;
+    color:#344E41;
+}
+
+.hero-container {
+    width:50%;
+    padding:3em;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:1em;
+    margin-top:1em;
+    background-color:#A3B18A;
+    border-radius:8px;
+}
+
+.hero-container img {
+    width:400px;
+    height:auto;
+    border-radius: 8px;
+}
+
+.hero-text {
+    width:20%;
+    margin-bottom:1em;
+    color:#344E41;
+}
+
+.services-overview {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+
+}
+
+.services-overview-text {
+    text-align: center;
+    margin-bottom:2em;
+    margin-top:2em;
+    color:#344E41;
+}
+
+.service-container {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    gap:2em;
+}
+
+.service-card-1, .service-card-2, .service-card-3, .service-card-4 {
+    display:flex;
+    flex-direction: column;
+    width:30%;
+    min-height:20%;
+    padding:2em;
+    background-color:#588157;
+    text-align: center;
+    border-radius:7px;
+    color:whitesmoke;
+}
+
+.service-card-1:hover, .service-card-2:hover, .service-card-3:hover, .service-card-4:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+.service-card-1 button, .service-card-2 button, .service-card-3 button, .service-card-4 button {
+    background-color:#DAD7CD;
+    border:none;
+    margin: 1em auto;
+    width:50%;
+    padding: .5em 2em;
+    border-radius:5px;
+    cursor:pointer;
+    font-family:"montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.service-card-1 button {
+    margin-top:2.5em;
+}
+
+.service-card1 button:active, .service-card-2 button:active, .service-card-3 button:active, .service-card-4 button:active {
+    background-color:#A3B18A;
+    color:whitesmoke;
+}
+
+.service-card-1 img, .service-card-2 img, .service-card-3 img, .service-card-4 img {
+    margin-top:1em;
+    margin-bottom:1em;
+    width:100%;
+    height:250px;
+    object-fit: cover;
+    border-radius:5px;
+}
+
+/* Tablet styles (768px and below) */
+@media (max-width: 768px) {
+    .navbar-container {
+        width: 90%;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .hero-container {
+        width: 80%;
+        flex-direction: column;
+        padding: 2em;
+    }
+
+    .hero-container img {
+        width: 100%;
+    }
+
+    .hero-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card-1, .service-card-2, .service-card-3, .service-card-4 {
+        width: 80%;
+    }
+}
+
+/* Mobile styles (480px and below) */
+@media (max-width: 480px) {
+    .navbar-container {
+        width: 95%;
+        padding: 1em;
+    }
+
+    .brand-name {
+        font-size: 1.2rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5em;
+    }
+
+    .main-content {
+        margin: 2em auto;
+    }
+
+    .intro-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .intro-text p {
+        padding: 0 1em;
+    }
+
+    .hero-container {
+        width: 95%;
+        padding: 1em;
+    }
+
+    .hero-container img {
+        width: 100%;
+    }
+
+    .services-overview-text {
+        font-size: 1.5rem;
+    }
+
+    .service-card-1, .service-card-2, .service-card-3, .service-card-4 {
+        width: 90%;
+    }
+
+    .service-card-1 img, .service-card-2 img, .service-card-3 img, .service-card-4 img {
+        height: 200px;
+    }
+}
